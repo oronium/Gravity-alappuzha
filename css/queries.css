@@ -68,9 +68,6 @@
     font-size: 4rem;
     line-height: 5.2rem;
   }
-  .hero-text {
-    max-width: 80vw;
-  }
   .primary-cta {
     padding: 0.8rem 1.6rem;
   }
@@ -155,14 +152,39 @@
 @media (max-width: 48rem) {
   .nav-list {
     flex-direction: column;
-    transform: translate(100%);
     overflow-x: hidden;
     gap: 1.6rem;
-    transition: background 0.5s linear;
-    display: none;
     padding: 2.4rem 0 4rem 0;
     justify-content: flex-start;
     min-height: 60vh;
+    width: 100vw;
+    overflow-x: hidden;
+    transform: translate(0, -100%);
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .nav-logo-menu {
+    z-index: 1100;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: none;
+
+    justify-content: flex-start;
+  }
+  .line-1-active {
+    transform: translate(0, 0) rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+  .line-2-active {
+    visibility: hidden;
+    transition: transform 0.3s ease;
+  }
+  .line-3-active {
+    transform: translate(0, -1.6rem) rotate(-45deg);
+    transition: transform 0.3s ease;
   }
   .list-item .hero-icons {
     display: flex;
@@ -172,11 +194,8 @@
     visibility: hidden;
   }
   .nav-active {
-    transform: translateX(0%);
-    display: flex;
-
-    gap: 2.4rem;
-    justify-content: space-between;
+    transform: translate(0, 0%);
+    height: 100vh;
   }
   .nav-background {
     background: rgba(255, 255, 255, 0.86);
@@ -191,12 +210,7 @@
     padding: 0.8rem 6.4rem;
     opacity: 1;
   }
-  .main-nav {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    justify-content: flex-start;
-  }
+
   .primary-textbox .primaryHeading {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -218,6 +232,7 @@
   }
   .bold24 {
     font-size: 1.6rem;
+    line-height: 2.4rem;
   }
   .contact-text img {
     height: 3.2rem;
@@ -235,6 +250,9 @@
   }
   .container {
     margin: 0 4rem;
+  }
+  .stat-value {
+    justify-content: flex-start;
   }
 
   /* //////////////////////////// */
@@ -328,5 +346,14 @@
   }
   .section-footer {
     padding: 4rem 0;
+  }
+}
+@media (max-width: 30rem) {
+  .primaryHeading {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .hero-text {
+    margin: 0 1.6rem;
   }
 }
