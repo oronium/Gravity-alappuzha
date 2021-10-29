@@ -166,6 +166,9 @@
   .nav-logo-menu {
     z-index: 1100;
   }
+  .gallery-item img {
+    filter: grayscale(0%);
+  }
   .main-nav {
     display: flex;
     flex-direction: column;
