@@ -247,6 +247,11 @@ textarea {
 .list-item .hero-icons {
   display: none;
 }
-.logo {
-  max-height: 2.4rem;
+.links .logo:hover,
+.links .logo:active {
+  background: var(--brandwhitishgreen);
+  padding: 0.8rem;
+  border-radius: 10rem;
+  transform: scale(1.1);
+  transition: all 0.3s;
 }

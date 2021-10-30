@@ -39,7 +39,6 @@ nav {
 
 .nav-logo-menu {
   display: flex;
-  padding: 2.4rem;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -138,6 +137,12 @@ nav {
   align-self: flex-end;
   display: flex;
   gap: 4.8rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
 }
 /* ////////////////////////////////////Stats */
 .section-stats {
@@ -378,6 +383,15 @@ form input {
   justify-content: space-between;
   align-items: flex-start;
   color: var(--brandwhitishgreen);
+}
+.links .logo {
+  background: var(--brandwhitishgreen);
+  padding: 0.8rem;
+  border-radius: 10rem;
+}
+.links .logo img {
+  height: 4rem;
+  width: 4rem;
 }
 .footer-icons {
   display: flex;
