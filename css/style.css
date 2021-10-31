@@ -16,7 +16,7 @@ nav {
   /* backdrop-filter: blur(16px); */
 }
 .main-nav {
-  padding: 0.8rem 6.4rem;
+  padding: 1.6rem 6.4rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
@@ -141,21 +141,20 @@ nav {
 .logo {
   display: flex;
   justify-content: center;
-  width: 6.4rem;
-  height: 6.4rem;
+  height: 4.8rem;
 }
 /* ////////////////////////////////////Stats */
 .section-stats {
   margin-top: 6.4rem;
   padding: 4.8rem 0;
-  background: var(--brandwhitishgreen);
+  background: #efefe78c;
 }
 .stat-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 7.2rem;
+  margin: 0 auto;
   align-content: center;
-  justify-content: center;
+  max-width: 70vw;
 }
 .stats {
   display: flex;
@@ -208,7 +207,7 @@ nav {
 }
 .exclusive-service {
   margin-top: 6.4rem;
-  background: #e6f8dc;
+  background: #e6f8dc87;
 }
 .exclusive-service-box {
   display: flex;
@@ -246,7 +245,7 @@ nav {
 /* /////////////////////////////////Section Contact US */
 .section-contact {
   padding: 4.8rem 0;
-  background: var(--accentorange);
+  background: #eaebd869;
 }
 .contact-box {
   display: flex;
