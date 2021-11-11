@@ -263,3 +263,8 @@ textarea {
   transform: scale(1.1);
   transition: all 0.3s;
 }
+.gallery-button h4:hover,
+.gallery-button h4:active {
+  color: var(--brandwhitishgreen);
+  background: var(--branddarkGreen);
+}

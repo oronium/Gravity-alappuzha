@@ -226,6 +226,10 @@ nav {
   padding: 1.6rem;
   overflow: hidden;
 }
+.gallery-2 {
+  display: none;
+  transition: all 3s;
+}
 .gallery-item {
   align-self: flex-end;
   overflow: hidden;
@@ -241,6 +245,21 @@ nav {
 .gallery-item img:focus {
   filter: grayscale(0%);
   transform: scale(1.09);
+}
+.gallery-cta {
+  color: var(--branddarkGreen);
+}
+.gallery-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+.gallery-button h4 {
+  padding: 0.8rem 1.6rem;
+  border-radius: 100px;
+  border: 0.2rem solid var(--branddarkGreen);
+  cursor: pointer;
 }
 /* /////////////////////////////////Section Contact US */
 .section-contact {

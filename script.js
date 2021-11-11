@@ -33,3 +33,20 @@ const barFunc = function () {
   });
 };
 barFunc();
+let flag = 0;
+const morefunc = function () {
+  const galleryButton = document.querySelector(".gallery-cta");
+  const gallery = document.querySelector(".gallery-2");
+  galleryButton.addEventListener("click", function () {
+    if (flag === 0) {
+      document.querySelector(".gallery-2").style.display = "grid";
+      galleryButton.textContent = "Show less";
+      flag = 1;
+    } else if (flag === 1) {
+      document.querySelector(".gallery-2").style.display = "none";
+      galleryButton.textContent = "Show more";
+      flag = 0;
+    }
+  });
+};
+morefunc();
